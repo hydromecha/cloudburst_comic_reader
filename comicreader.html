@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">THE CLOUDBURST COMIC READER</title>
+    <link rel="shortcut icon" href="../assets/icon.ico">
+    <link href="readerstyle.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    
+    <center>
+      
+      <main>
+
+          <center>
+         <noscript><h1>Javascript is required for this part of the website to work.</h1></noscript>
+         <select id="comicMenu" onchange = "changeComic(-1)"></select>
+				<div class="outerborder">
+
+				<div class="container"></div>
+				
+				<img id="page" src="loading.gif" style=" display:inline-block; max-width: 100%; max-height: 100%; position: relative; vertical-align: middle;">
+				
+				<img class="left" id="leftSide" style="width: 50%; height: 100%; position: absolute;top: 0%; left: 0%;" src="blank.png" onclick="placeTurn(0)" onmouseover="buttonHover(1)" onmouseout="buttonHover(0)">
+				<img class="right" id="rightSide" style="width: 50%; height: 100%; position: absolute;top: 0%; right: 0%;" src="blank.png" onclick="placeTurn(1)" onmouseover="buttonHover(3)" onmouseout="buttonHover(2)">
+				
+				</div>     		  
+          	<img class="left" id="buttonBack" src="buttonBack.png" onclick="placeTurn(0)" style="width: 200px;" onmouseover="buttonHover(1)" onmouseout="buttonHover(0)">
+          	<img class="right" id="buttonNext" src="buttonNext.png" onclick="placeTurn(1)" style="width: 200px;" onmouseover="buttonHover(3)" onmouseout="buttonHover(2)">
+          	<br>
+          	<img class="otherButton" id="buttonFirst" src="buttonFirst.png" onclick="placeTurn(2)" style="width: 200px;" onmouseover="buttonHover(5)" onmouseout="buttonHover(4)">
+          	<img class="otherButton" id="buttonNewest" src="buttonNewest.png" onclick="placeTurn(3)" style="width: 200px;" onmouseover="buttonHover(7)" onmouseout="buttonHover(6)">
+          	
+          	<br>
+          	<select id="chapterMenu" onchange="placeTurn(5)"></select>
+          	<select id="pageMenu" onchange="placeTurn(4)"></select>
+
+
+          </center>
+        
+      </main>
+    </center>
+
+    <footer>
+      <center>
+
+		<div class="descbox">
+			<p id="notes">PLACEHOLDER NOTE TEXT</p>
+			<p>Use the Arrow Keys, Back/Next buttons, or click on the left/right side of pages to navigate.</p>
+			<p id="desc">IF YOU SEE THIS TEXT SOMETHING IS BROKEN. YOU MIGHT HAVE JAVASCRIPT DISABLED.</p>
+      	</div>
+      	<br>
+      	<div class="artbox" style="vertical-align: top; width:450px;">
+      	<h2 style="margin-top: 5px; margin-bottom: 5px;">Chapters</h2>
+      	<div id="chapterButtons" style="overflow: scroll;"></div>
+      	</div>
+		<div class="artbox" style="vertical-align: top; width:450px;">
+      	<h2 style="margin-top: 5px; margin-bottom: 5px;">Comics</h2>
+      	<div id="comicButtons" style="overflow: scroll;"></div>
+      	</div>
+
+      	<p>Powered by <a href="https://github.com/hydromecha/cloudburst_comic_reader">The Cloudburst Comic Reader</a></p>
+
+      	<a href=""><img id="logo" src="SITE_TITLE_DARK.png" style="max-width:25%;max-height:25%;" onmouseover="buttonHover(100)" onmouseout="buttonHover(99)"></a>
+
+      </center>
+    </footer>
+    <script type="text/javascript" src="comics.js"></script>
+    <script type="text/javascript" src="comicnotes.js"></script>
+    <script type="text/javascript" src="comicpagenames.js"></script>
+    <script type="text/javascript" src="cloudburst.js"></script>
+
+
+</html>

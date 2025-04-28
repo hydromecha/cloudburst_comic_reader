@@ -1,0 +1,146 @@
+body {
+  margin: auto;
+  font-family: Arial;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+
+select {
+    padding: 5px;
+    margin: 3px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: 4px solid gray;
+    text-align: center;
+}
+
+html{
+cursor: url(cursor.png), auto;
+}
+
+a{
+cursor: url(cursor_pointer.png), pointer;
+}
+
+select{
+  cursor: url(cursor_pointer.png), pointer;
+}
+
+@keyframes opacityAnim {
+	0% {opacity: 0;}
+	100% {opacity: 100;}
+}
+
+.unsee
+{
+	animation: opacityAnim .3s linear;
+}
+
+.outerborder
+{
+  border: 16px solid gray;
+    border-top-width: 16px;
+    border-right-width: 16px;
+    border-bottom-width: 16px;
+    border-left-width: 16px;
+	
+    height: 100%;
+    width: 80vw;
+
+    text-align: center; 
+    font: 0/0 a;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.container
+{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center; 
+	height: 100%;
+}
+
+.otherButton
+{
+  cursor: url(cursor_pointer.png), pointer;
+}
+
+.noClick
+{
+  cursor: not-allowed;
+}
+
+.left
+{
+	cursor: url(cursor_left.png), auto;
+}
+
+.right
+{
+	cursor: url(cursor_right.png), auto;
+}
+
+.outerartbox
+{
+  border: 1px solid white;
+  background-color: gray;
+  margin: 2px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 175px;
+  color: white;
+}
+
+.outerartbox:hover {
+color: white;
+}
+
+.descbox
+{
+  border: 4px solid gray;
+  background-color: black;
+  margin: .2%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 50%;
+}
+
+.outerartbox .tooltip
+{
+	margin-left: -100px;
+	margin-top: -150px;
+	visibility: hidden;
+	border: 1px solid white;
+	padding: 2px;
+	max-width: 400px;
+	text-align: center;
+	background-color: black;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+
+.outerartbox:hover .tooltip
+{
+	visibility: visible;
+	opacity: 1;
+}
+
+.artbox
+{
+ border: 1px solid white;
+ padding: 1px;
+ margin-top: 5px;
+ height: 95%;
+ width: 95%;
+ background-color: black;
+ display: inline-block;
+ vertical-align: middle;
+}
