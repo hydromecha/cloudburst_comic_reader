@@ -1,6 +1,9 @@
 # The Cloudburst Comic Reader
 A JS comic reader intended for serialized webcomics on Neocities and other similar webhosts.
 
+For a live demo of the reader, check Hydromecha.Website: https://hydromecha.website/comics/comicreader
+(If something looks broken there try clearing your browser's cache/hitting ctrl+F5)
+
 # Key Features
 - Can be used to host multiple comics all from a single webpage.
 - URL hashes let you bookmark or link to specific comics/chapters/pages.
