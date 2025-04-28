@@ -9,7 +9,7 @@ For a live demo of the reader, check Hydromecha.Website: https://hydromecha.webs
 - URL hashes let you bookmark or link to specific comics/chapters/pages.
 - Next and previous (if applicable) pages are preloaded to make for a smoother reading experience.
 - Procedurally creates menu elements based on the information you enter.
-- Built-in tutorial (clone the repo and open the html file).
+- Built-in tutorial (clone the repo and open the html file in a browser).
 
 # Limitations
 - Comic pages must all be the same filetype.
